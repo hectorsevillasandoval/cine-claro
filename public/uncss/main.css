@@ -230,7 +230,7 @@ header .menu-principal li a {
   background-color: #464646;
   color: #fff;
   display: block;
-  padding: .3rem .5rem;
+  padding: .3rem;
 }
 
 header .menu-principal li:last-child {
