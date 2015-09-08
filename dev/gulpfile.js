@@ -14,6 +14,7 @@ var gulp = require('gulp'),
 
 //tareas
 gulp.task('stylus', function () {
+    'use strict';
 gulp.src('stylus/main.styl')
 		.pipe(stylus({use: [nib()], compress:true}))
 		.pipe(gulp.dest('../public/css'))
@@ -62,7 +63,7 @@ gulp.task('watch', function() {
 gulp.task('uncss', function() {
     // content
     gulp.src('../public/css/main.css')
-        .pipe(uncss({html: ['index.html','headhunting.html']}))
+        .pipe(uncss({html: ['index.html']}))
         /*.pipe(compressor())*/
         .pipe(gulp.dest('../public/uncss/'));
 });
