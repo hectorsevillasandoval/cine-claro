@@ -52,9 +52,11 @@ body {
   margin: 0;
 }
 
+article,
 figure,
 header,
-nav {
+nav,
+section {
   display: block;
 }
 
@@ -117,9 +119,11 @@ body {
   margin: 0;
 }
 
+article,
 figure,
 header,
-nav {
+nav,
+section {
   display: block;
 }
 
@@ -179,6 +183,7 @@ a {
 }
 
 ul,
+p,
 figure {
   margin: 0;
   padding: 0;
@@ -241,4 +246,35 @@ header .menu-principal li:last-child {
 header .menu-principal li:last-child a {
   background-color: transparent;
   position: absolute;
+}
+
+.estrenos {
+  background-color: rgba(255,45,0,0.7);
+}
+
+.estrenos h3 {
+  font-family: "Impact";
+  font-size: 1.9375rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 4px 3px 7px rgba(0,0,0,0.75);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.peliculas {
+  background-color: rgba(0,0,0,0.7);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.peliculas .pelicula {
+  margin-bottom: 1rem;
+}
+
+.peliculas .pelicula:last-child {
+  margin-bottom: 0;
 }
