@@ -143,14 +143,21 @@
 
                       </div>
                       <div class="tickets">
+
+                        <a href="#" id="tick">
+                          <img src='img/tickets.png' height=254 width='278' alt=''></a>
+                        </a>
                          
-                          <ul id="nav">
-    <li><a href="<link_path>">item 1</a></li>
-    <li><a href="<link_path>">item 2</a></li>
-    <li><a href="<link_path>">item 3</a></li>
-    <li><a href="<link_path>">item 4</a></li>
-    <li><a href="<link_path>">item 5</a></li>
-    <li><a href="<link_path>">item 6</a></li>
+                          <ul id="navs" data-open="close" data-close="open">
+    <li><a href="#">
+      <img src="img/menu-mov-1.png" height="81" width="82" alt="">
+    </a></li>
+    <li><a href="#">
+<img src="img/menu-mov-2.png" height="81" width="82" alt="">
+    </a></li>
+    <li><a href="#">
+      <img src="img/menu-mov-3.png" height="81" width="82" alt="">
+    </a></li>
 </ul>
                       </div>
                     </div>
@@ -164,13 +171,37 @@
     <script type="text/javascript" src="js/minificado/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/equalize.js/1.0.2/equalize.min.js"></script>
-    <script src="/js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
+  
 
     
 
     <script type="text/javascript">
       $('.principal .row').equalize('outerHeight');
-      $("#nav").ferroMenu();
+      
+
+        (function(){
+  var ul=$("#tick"),li=$("#navs li"),i=li.length,n=i-1,r=120;
+
+  ul.click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('active');
+    if($(this).hasClass('active')){
+      $("#navs").toggleClass('active');
+      for(var a=0;a<i;a++){
+        li.eq(a).css({
+          'transition-delay':""+(50*a)+"ms",
+          '-webkit-transition-delay':""+(50*a)+"ms",
+          'left':(r*Math.cos(90/n*a*(Math.PI/180))),
+          'top':(-r*Math.sin(90/n*a*(Math.PI/180)))  
+        });
+      }
+    }else{
+      li.removeAttr('style');
+    }
+  });
+})($);
+
+
     </script>
     
     </body>
