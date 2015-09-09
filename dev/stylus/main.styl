@@ -18,6 +18,7 @@
 
 @import 'fonts.styl'
 @import 'normalize.styl'
+@import 'buble.styl'
 @import 'nib'
 
 
@@ -55,26 +56,37 @@ figure
 	padding 0
 ul
 	list-style none
+	
+.button-2
+	background-color: #FFF
+	border solid 1px rgba(0,0,0,.14)
+	border-radius 6px
+	box-shadow: inset 9px 7px 11px rgba(0,0,0,.3)
+	color black
+	height rem(25)
+	padding .2rem .7rem
+	text-transform: capitalize
+	width rem(121)
 
 .borde-superior
 	background-color rojo
 	height rem(24)
 header
 	background-color black
-	padding-top 1rem
 	padding-bottom 1rem
+	padding-top 1rem
 	.formulario
 		input[type="text"]
-			width rem(206)
-			height rem(47)
 			border-radius 3px 0 0 3px
 			box-shadow inset 3px 2px 1px rgba(0,0,0,.3)
+			height rem(47)
+			width rem(206)
 		button
-			width rem(115)
-			height rem(52)
 			background-color rojo
 			border none
 			color white
+			height rem(52)
+			width rem(115)
 	.menu-principal
 		padding-top .7rem
 		li
@@ -93,22 +105,60 @@ header
 					position absolute
 
 //Seccion Principal INICIO
+.principal
+	background-image: url('/img/bgnd.jpg')
+	background-size: cover
 .estrenos
 	background-color: rgba(255,45,0,.7)
+	position relative
 	h3
+		color white
 		font-family "Impact"
 		font-size rem(31)
-		text-transform: uppercase
-		color white
+		left -97px
+		position absolute
 		text-shadow: 4px 3px 7px rgba(0,0,0,.75)
+		text-transform: uppercase
+		top 45%
 		transform rotate(-90deg)
+		width rem(300)
 .peliculas
 	background-color: rgba(0,0,0,.7)
-	padding-top: 1.5rem
 	padding-bottom: 1.5rem
+	padding-top: 1.5rem
 	.pelicula
 		margin-bottom 1rem
+		h2
+			font-family "DINCOND"
+			font-size rem(21)
+			color amarillo
+			text-transform: uppercase
+		.content
+			font-family "DINCOND"
+			font-size: rem(25)
+			color white
 		&:last-child
 			margin-bottom 0
 
 // Seccion Principal FIN
+
+// Footer INICIO
+footer
+	background-color: rojo
+	padding-top 1.3rem
+	padding-bottom: 1.3rem
+	.container
+		position relative
+	.footer-menu
+		li
+			color white
+			alinear()
+			a
+				color white
+			&:last-child
+				margin-left .8rem
+	.tickets
+		position absolute
+		right 0
+		top -269px
+// FOOTER FIN

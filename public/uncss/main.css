@@ -54,6 +54,7 @@ body {
 
 article,
 figure,
+footer,
 header,
 nav,
 section {
@@ -107,6 +108,28 @@ input {
   line-height: normal;
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#nav li {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+#nav li a {
+  font-size: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #45484d;
+  line-height: 40px;
+  display: block;
+}
+
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 
 html {
@@ -121,6 +144,7 @@ body {
 
 article,
 figure,
+footer,
 header,
 nav,
 section {
@@ -193,6 +217,20 @@ ul {
   list-style: none;
 }
 
+.button-2 {
+  background-color: #fff;
+  border: solid 1px rgba(0,0,0,0.14);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 9px 7px 11px rgba(0,0,0,0.3);
+  box-shadow: inset 9px 7px 11px rgba(0,0,0,0.3);
+  color: #000;
+  height: 1.5625rem;
+  padding: .2rem .7rem;
+  text-transform: capitalize;
+  width: 7.5625rem;
+}
+
 .borde-superior {
   background-color: #f00;
   height: 1.5rem;
@@ -200,25 +238,25 @@ ul {
 
 header {
   background-color: #000;
-  padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 header .formulario input[type="text"] {
-  width: 12.875rem;
-  height: 2.9375rem;
   -webkit-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
   -webkit-box-shadow: inset 3px 2px 1px rgba(0,0,0,0.3);
   box-shadow: inset 3px 2px 1px rgba(0,0,0,0.3);
+  height: 2.9375rem;
+  width: 12.875rem;
 }
 
 header .formulario button {
-  width: 7.1875rem;
-  height: 3.25rem;
   background-color: #f00;
   border: none;
   color: #fff;
+  height: 3.25rem;
+  width: 7.1875rem;
 }
 
 header .menu-principal {
@@ -248,33 +286,88 @@ header .menu-principal li:last-child a {
   position: absolute;
 }
 
+.principal {
+  background-image: url("/img/bgnd.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
 .estrenos {
   background-color: rgba(255,45,0,0.7);
+  position: relative;
 }
 
 .estrenos h3 {
+  color: #fff;
   font-family: "Impact";
   font-size: 1.9375rem;
-  text-transform: uppercase;
-  color: #fff;
+  left: -97px;
+  position: absolute;
   text-shadow: 4px 3px 7px rgba(0,0,0,0.75);
+  text-transform: uppercase;
+  top: 45%;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  width: 18.75rem;
 }
 
 .peliculas {
   background-color: rgba(0,0,0,0.7);
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .peliculas .pelicula {
   margin-bottom: 1rem;
 }
 
+.peliculas .pelicula h2 {
+  font-family: "DINCOND";
+  font-size: 1.3125rem;
+  color: #ffea00;
+  text-transform: uppercase;
+}
+
+.peliculas .pelicula .content {
+  font-family: "DINCOND";
+  font-size: 1.5625rem;
+  color: #fff;
+}
+
 .peliculas .pelicula:last-child {
   margin-bottom: 0;
+}
+
+footer {
+  background-color: #f00;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+footer .container {
+  position: relative;
+}
+
+footer .footer-menu li {
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .footer-menu li a {
+  color: #fff;
+}
+
+footer .footer-menu li:last-child {
+  margin-left: .8rem;
+}
+
+footer .tickets {
+  position: absolute;
+  right: 0;
+  top: -269px;
 }
