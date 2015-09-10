@@ -313,6 +313,7 @@ header .menu-principal li:last-child {
 header .menu-principal li:last-child a {
   background-color: transparent;
   position: absolute;
+  z-index: 100;
 }
 
 .principal {
@@ -354,6 +355,55 @@ header .menu-principal li:last-child a {
   margin-bottom: 1rem;
 }
 
+.peliculas .pelicula .overlay {
+  width: 86%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  line-height: 12;
+  text-align: center;
+}
+
+.peliculas .pelicula .overlay a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.peliculas .pelicula .overlay a:before {
+  content: "\f144";
+  font-family: "fontawesome";
+  font-size: 1.5rem;
+  padding-right: .3rem;
+}
+
+.peliculas .pelicula figure {
+  position: relative;
+}
+
+.peliculas .pelicula figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.peliculas .pelicula figure:hover .overlay {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
 .peliculas .pelicula h2 {
   font-family: "DINCOND";
   font-size: 1.3125rem;
@@ -369,6 +419,14 @@ header .menu-principal li:last-child a {
 
 .peliculas .pelicula:last-child {
   margin-bottom: 0;
+}
+
+.modal-content {
+  background-color: #444;
+}
+
+.modal-header {
+  border-bottom: 0;
 }
 
 footer {

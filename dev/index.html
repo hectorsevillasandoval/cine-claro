@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         
     </head>
@@ -49,7 +50,7 @@
                   					<li><a href="">Proximos Estrenos</a></li>
                   					<li><a href="">Claro Video</a></li>
                   					<li><a href="">Premios</a></li>
-                  					<li><a href=""><img src="img/movie-button.png" alt=""></a></li>
+                  					<li class="btn-movie"><a href="#"><img src="img/movie-button.png" alt=""></a></li>
                   				</ul>
                   			</nav>
                   		</div>
@@ -57,11 +58,30 @@
                   	</div>
                   </header>
                   <!-- Header fin -->
+
+
+                 
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" width="400" height="300" frameborder="0" allowfullscreen=""></iframe>                  
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
                   
                   <!-- Seccion Principal INICIO -->
                   <section class="principal ">
                     <div class="container-fluid">
-                      <div class="row">
+                      <div class="row ">
 
                         
                           <div class="estrenos col-md-1">
@@ -75,26 +95,40 @@
 
                           <!--  PELICULA 1 INICIO -->
                           <article class="pelicula row">
-                            <figure class="left col-md-4"><img src="img/movie-1.png" height="310" width="207" alt=""></figure>
+                            <figure class="left col-md-4">
+                              
+                                <img src="img/movie-1.png" height="310" width="207" alt="">  
+                              
+                              <div class="overlay"><a href="#" class="trailer">
+                                  Ver Trailer  
+                              </a></div>
+                              </figure>
                             <div class="right col-md-8">
                               <h2>Sinopsis</h2>
                               <p class="content">
                                 La pelicula comica sigue las aventuras de Susan Cooper interpretada por Melissa McCarthy, una analista de la CIA que decide convertirse en agente secreta de la compañia para resolver varios casos de la agencia.
                               </p>
-                              <a href="" class="button-2">ver trailer</a>
+                              <a href="#" class="button-2 trailer">ver trailer</a>
                             </div>
                           </article>
                           <!--  PELICULA 1 FIN -->
 
                           <!--  PELICULA 2 INICIO -->
                           <article class="pelicula row">
-                            <figure class="left col-md-4"><img src="img/movie-2.png" height="310" width="207" alt=""></figure>
+                            <figure class="left col-md-4">
+                              
+                                <img src="img/movie-2.png" height="310" width="207" alt="">  
+                              
+                              <div class="overlay"><a href="#" class="trailer">
+                                  Ver Trailer  
+                              </a></div>
+                              </figure>
                             <div class="right col-md-8">
                               <h2>Sinopsis</h2>
                               <p class="content">
                                 La falla de San Andrés termina por ceder ante las temibles fuerzas telúricas y acaba desencadenando un terremoto de magnitud 9 en California. El piloto de un helicóptero de búsqueda y rescate y su ex mujer viajan juntos desde la ciudad de Los Ángeles hasta ...
                               </p>
-                              <a href="" class="button-2">ver trailer</a>
+                              <a href="#" class="button-2 trailer">ver trailer</a>
                             </div>
                           </article>
                           <!--  PELICULA 2 FIN -->
@@ -105,7 +139,7 @@
                         </div>
 
 
-                        <div class="proximamente col-md-5">
+                        <div class="proximamente col-md-5"> 
                           
                         </div>
                       </div>
@@ -124,7 +158,7 @@
                         
                         <div class="col-md-2 footer-menu">
                           <ul>
-                            <li><a href="">Contacto</a></li>
+                            <li><a href="">Contacto</a></li> 
                             <li><a href="">Ayuda</a></li>
                           </ul>
                         </div>
@@ -170,13 +204,14 @@
 
     <script type="text/javascript" src="js/minificado/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/equalize.js/1.0.2/equalize.min.js"></script>
   
 
     
 
     <script type="text/javascript">
-      $('.principal .row').equalize('outerHeight');
+      $('.principal > div > .row').equalize('outerHeight');
       
 
         (function(){
@@ -203,6 +238,23 @@
 
 
     </script>
+
+    <script>
+    $('.trailer').click(function () {
+        var src = 'http://www.youtube.com/v/FSi2fJALDyQ&amp;autoplay=1';
+        $('#myModal').modal('show');
+        $('#myModal iframe').attr('src', src);
+    });
+
+    $('#myModal button').click(function () {
+        $('#myModal iframe').removeAttr('src');
+    });
+
+    $('#myModal').draggable({
+            handle: ".modal-header"
+        });
+    
+</script>
     
     </body>
 </html>

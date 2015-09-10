@@ -103,6 +103,7 @@ header
 				a
 					background-color transparent
 					position absolute
+					z-index: 100
 
 //Seccion Principal INICIO
 .principal
@@ -128,6 +129,36 @@ header
 	padding-top: 1.5rem
 	.pelicula
 		margin-bottom 1rem
+		.overlay
+			width 86%
+			height 100%
+			background-color: rgba(0, 0, 0, .75)
+			opacity: 0
+			transition all .5s ease
+			position absolute
+			left 15px
+			top 0
+			bottom 0
+			line-height 12
+			text-align center
+			a
+				display block
+				height 100%
+				color white
+				text-decoration none
+				&:before
+					content "\f144"
+					font-family "fontawesome"
+					font-size 1.5rem
+					padding-right: .3rem
+		figure
+			position relative
+			img
+				max-width 100%
+				height auto
+			&:hover
+				.overlay
+					opacity 1
 		h2
 			font-family "DINCOND"
 			font-size rem(21)
@@ -139,6 +170,10 @@ header
 			color white
 		&:last-child
 			margin-bottom 0
+.modal-content
+	background-color: #444
+.modal-header
+	border-bottom 0
 
 // Seccion Principal FIN
 
