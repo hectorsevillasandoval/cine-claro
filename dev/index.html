@@ -178,9 +178,6 @@
                       </div>
                       <div class="tickets">
 
-                        <a href="#" id="tick">
-                          <img src='img/tickets.png' height=254 width='278' alt=''></a>
-                        </a>
                          
                           <ul id="navs" data-open="close" data-close="open">
     <li><a href="#">
@@ -192,6 +189,13 @@
     <li><a href="#">
       <img src="img/menu-mov-3.png" height="81" width="82" alt="">
     </a></li>
+
+    <li><a href="#">
+      <img src="img/menu-mov-3.png" height="81" width="82" alt="">
+    </a></li>
+
+
+
 </ul>
                       </div>
                     </div>
@@ -215,19 +219,18 @@
       
 
         (function(){
-  var ul=$("#tick"),li=$("#navs li"),i=li.length,n=i-1,r=120;
+  var ul=$("#navs"),li=$("#navs li"),i=li.length,n=i-1,r=170;
 
-  ul.click(function(e){
-    e.preventDefault();
+  ul.click(function(){
     $(this).toggleClass('active');
     if($(this).hasClass('active')){
-      $("#navs").toggleClass('active');
+      
       for(var a=0;a<i;a++){
         li.eq(a).css({
           'transition-delay':""+(50*a)+"ms",
           '-webkit-transition-delay':""+(50*a)+"ms",
-          'left':(r*Math.cos(90/n*a*(Math.PI/180))),
-          'top':(-r*Math.sin(90/n*a*(Math.PI/180)))  
+          'left':(r*Math.cos(60/n*a*(Math.PI/180))),
+          'top':(-r*Math.sin(60/n*a*(Math.PI/180)))  
         });
       }
     }else{

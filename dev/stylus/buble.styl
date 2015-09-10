@@ -1,9 +1,8 @@
 #navs
-    position absolute
     left 4px
     bottom 4px
-    /*width 40px
-    height 40px*/
+    width 278px
+    height 254px
     line-height 40px
     list-style-type none
     margin 0
@@ -11,21 +10,17 @@
     text-align center
     color #fff
     cursor pointer
-    opacity 0
+    opacity 1
     transition all .6s
+    background-image url("../img/tickets.png")
     & > li
         transition all .6s
         -webkit-transition all .6s
         -moz-transition .6s
-    &:after
-        content attr(data-close)
-        z-index 1
-        border-radius 50%
-        -webkit-border-radius 50%
+        opacity 0
     &.active
-        opacity 1
-        &:after
-            content attr(data-open)
+        & > li
+            opacity 1
     a
         width 40px
         height 40px
@@ -41,8 +36,8 @@
     position absolute
     left 0
     top 0
-    width 100%
-    height 100%
+    width 82px
+    height 81px
     border-radius 50%
     -webkit-border-radius 50%
-    background-color #4ECDC4
+    //background-color #4ECDC4
