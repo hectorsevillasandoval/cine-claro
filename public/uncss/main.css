@@ -109,9 +109,10 @@ input {
 }
 
 #navs {
-  position: absolute;
   left: 4px;
   bottom: 4px;
+  width: 278px;
+  height: 254px;
   line-height: 40px;
   list-style-type: none;
   margin: 0;
@@ -119,21 +120,16 @@ input {
   text-align: center;
   color: #fff;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   transition: all .6s;
+  background-image: url("../img/tickets.png");
 }
 
 #navs > li {
   transition: all .6s;
   -webkit-transition: all .6s;
   -moz-transition: .6s;
-}
-
-#navs:after {
-  content: attr(data-close);
-  z-index: 1;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
+  opacity: 0;
 }
 
 #navs a {
@@ -152,11 +148,10 @@ input {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 82px;
+  height: 81px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-  background-color: #4ecdc4;
 }
 
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -244,6 +239,12 @@ figure {
 
 ul {
   list-style: none;
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: #ffea00;
+  text-transform: capitalize;
 }
 
 .button-2 {
