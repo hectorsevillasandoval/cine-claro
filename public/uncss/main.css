@@ -6,38 +6,17 @@
 }
 
 @font-face {
-  font-family: OSansBold;
+  font-family: DINBOLD;
   font-weight: normal;
-  src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-bold-webfont.woff") format('woff'),url("../fonts/opensans-bold-webfont.ttf") format('truetype'),url("../fonts/opensans-bold-webfont.svg#opensans-bold-webfont") format('svg');
+  src: url("../fonts/dinbold-webfont.eot");
+  src: url("../fonts/dinbold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/dinbold-webfont.woff") format('woff'),url("../fonts/dinbold-webfont.ttf") format('truetype'),url("../fonts/dinbold-webfont.svg#dinbold-webfont") format('svg');
 }
 
 @font-face {
-  font-family: OSansLight;
+  font-family: DINREGULAR;
   font-weight: normal;
-  src: url("../fonts/opensans-light-webfont.eot");
-  src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-light-webfont.woff") format('woff'),url("../fonts/opensans-light-webfont.ttf") format('truetype'),url("../fonts/opensans-light-webfont.svg#opensans-light-webfont") format('svg');
-}
-
-@font-face {
-  font-family: OSansReg;
-  font-weight: normal;
-  src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-regular-webfont.woff") format('woff'),url("../fonts/opensans-regular-webfont.ttf") format('truetype'),url("../fonts/opensans-regular-webfont.svg#opensans-regular-webfont") format('svg');
-}
-
-@font-face {
-  font-family: RobotoBold;
-  font-weight: normal;
-  src: url("../fonts/roboto-bold-webfont.eot");
-  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/roboto-bold-webfont.woff") format('woff'),url("../fonts/roboto-bold-webfont.ttf") format('truetype'),url("../fonts/roboto-bold-webfont.svg#roboto-bold-webfont") format('svg');
-}
-
-@font-face {
-  font-family: RobotoMedium;
-  font-weight: normal;
-  src: url("../fonts/roboto-medium-webfont.eot");
-  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/roboto-medium-webfont.woff") format('woff'),url("../fonts/roboto-medium-webfont.ttf") format('truetype'),url("../fonts/roboto-medium-webfont.svg#roboto-medium-webfont") format('svg');
+  src: url("../fonts/pt_din_condensed_cyrillic-webfont.eot");
+  src: url("../fonts/pt_din_condensed_cyrillic-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/pt_din_condensed_cyrillic-webfont.woff") format('woff'),url("../fonts/pt_din_condensed_cyrillic-webfont.ttf") format('truetype'),url("../fonts/pt_din_condensed_cyrillic-webfont.svg#pt_din_condensed_cyrillic-webfont") format('svg');
 }
 
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -242,6 +221,7 @@ ul {
 }
 
 h2 {
+  font-family: "DINBOLD";
   font-size: 2.25rem;
   color: #ffea00;
   text-transform: capitalize;
@@ -259,6 +239,10 @@ h2 {
   padding: .2rem .7rem;
   text-transform: capitalize;
   width: 7.5625rem;
+}
+
+body {
+  font-family: "DINREGULAR";
 }
 
 .borde-superior {
@@ -317,13 +301,6 @@ header .menu-principal li:last-child a {
   z-index: 100;
 }
 
-.principal {
-  background-image: url("/img/bgnd.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
 .estrenos {
   background-color: rgba(255,45,0,0.7);
   position: relative;
@@ -357,7 +334,7 @@ header .menu-principal li:last-child a {
 }
 
 .peliculas .pelicula .overlay {
-  width: 86%;
+  width: 86.5%;
   height: 100%;
   background-color: rgba(0,0,0,0.75);
   opacity: 0;
@@ -406,15 +383,16 @@ header .menu-principal li:last-child a {
 }
 
 .peliculas .pelicula h2 {
-  font-family: "DINCOND";
+  font-family: "DINBOLD";
   font-size: 1.3125rem;
   color: #ffea00;
   text-transform: uppercase;
 }
 
 .peliculas .pelicula .content {
-  font-family: "DINCOND";
-  font-size: 1.5625rem;
+  font-family: "DINREGULAR";
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
   color: #fff;
 }
 
@@ -430,6 +408,13 @@ header .menu-principal li:last-child a {
   border-bottom: 0;
 }
 
+.principal {
+  background-image: url("/img/cartelera-background.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
 footer {
   background-color: #f00;
   padding-top: 1.3rem;
@@ -438,6 +423,21 @@ footer {
 
 footer .container {
   position: relative;
+}
+
+footer .social li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+footer .social li:first-child {
+  color: #fff;
+}
+
+footer .social li:last-child {
+  margin-right: 0;
 }
 
 footer .footer-menu li {

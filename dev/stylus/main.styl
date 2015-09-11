@@ -57,11 +57,14 @@ figure
 ul
 	list-style none
 h2
+	font-family "DINBOLD"
 	font-size: rem(36)
 	color amarillo
 	text-transform: capitalize
 h1
+	font-family "DINBOLD"
 	font-size: rem(40)
+	padding-top 2rem
 	margin-top 0
 	text-align center
 	color white
@@ -76,7 +79,8 @@ h1
 	padding .2rem .7rem
 	text-transform: capitalize
 	width rem(121)
-
+body
+	font-family "DINREGULAR"
 .borde-superior
 	background-color rojo
 	height rem(24)
@@ -116,8 +120,9 @@ header
 
 //Seccion Principal INICIO
 .principal
-	background-image: url('/img/bgnd.jpg')
-	background-size: cover
+	&.home
+		background-image: url('/img/bgnd.jpg')
+		background-size: cover
 .estrenos
 	background-color: rgba(255,45,0,.7)
 	position relative
@@ -139,7 +144,7 @@ header
 	.pelicula
 		margin-bottom 1rem
 		.overlay
-			width 86%
+			width 86.5%
 			height 100%
 			background-color: rgba(0, 0, 0, .75)
 			opacity: 0
@@ -169,13 +174,14 @@ header
 				.overlay
 					opacity 1
 		h2
-			font-family "DINCOND"
+			font-family "DINBOLD"
 			font-size rem(21)
 			color amarillo
 			text-transform: uppercase
 		.content
-			font-family "DINCOND"
-			font-size: rem(25)
+			font-family "DINREGULAR"
+			font-size: rem(18)
+			margin-bottom 1rem
 			color white
 		&:last-child
 			margin-bottom 0
@@ -195,38 +201,210 @@ header
 		.right
 			alinear()
 		.left
-			max-width rem(207)
+			max-width rem(200)
 		.right
-			max-width 70%
+			max-width 60%
 			margin-left 1rem
 			.content
-				font-size: rem(22)
+				font-size: rem(18)
 				color white
 				margin-bottom 1rem
+			.calificar
+				text-align: center
+				color white
+		.overlay
+			background-color: rgba(0, 0, 0, .75)
+			opacity: 0
+			transition all .5s ease
+			position absolute
+			left 0
+			top 0
+			right 0
+			bottom 0
+			line-height 12
+			text-align center
+			a
+				display block
+				height 100%
+				color white
+				text-decoration none
+				&:before
+					content "\f144"
+					font-family "fontawesome"
+					font-size 1.5rem
+					padding-right: .3rem
+		figure
+			position relative
+			img
+				max-width 100%
+				height auto
+			&:hover
+				.overlay
+					opacity 1
 	.trailer
 		margin-bottom 4rem
 .pelicula-right
 	padding-top 4rem
+	#cines
+		background-color: transparent
+		background-image: none
+		border 0
+		ul
+			background-color: transparent
+			border 0
+			background-image: none
+			li
+				background-color: transparent
+				background-image: none
+				border 0
+				max-width 75px
+				margin-right .4rem
+				a
+					padding 0
+					img
+						max-width 100%
+						height auto
+		.accordion
+			h3
+				font-family: "DINREGULAR"
+				font-size: 1.5rem 
+				background-image: none
+				background #eaeaea
+				border 0
+				padding .5rem
+				*
+					vertical-align: middle
+				.ui-icon
+					display none
+		.ui-tabs-panel
+			padding-left 0
+			padding-right 0
+		.content-cine
+			background-image none
+			background #fff
+			font-family: "DINREGULAR"
+			text-align: left
+			border 0
 // DETALLE PELICULA FIN
 
 // CINES INICIO
+.principal
+	background-image: url("/img/cartelera-background.png")
+	background-size: cover
 .prefooter-cines
 	background-color: rgba(0, 0, 0, .75)
 	padding-top 5rem
 .menu-cines
 	li
 		alinear()
+		margin-right 1rem
+		&:last-child
+			margin-right 0
+		a
+			display block
+			border-radius 10px
+			&:hover
+				box-shadow 0 0 15px white
 .dropup
 	button
+	.dropdown-menu
 		width 100%
 // CINES FIN
 
 // CARTELERA INICIO
+.cartelera-page
+	.principal
+		background-image: url("/img/cartelera-background.png")
 .seleccion-cartelera
 	.dropdown
 		button
 			width 100%
+.cartelera
+	margin-top 2rem
+	margin-bottom 2rem
+	> .row
+		margin-bottom 2rem
+	.info
+		text-align: center
+		max-width 20rem
+		margin-left: auto
+		margin-right: auto
+		margin-top: 5rem
+		p
+			color white
+			a
+				color amarillo
+				text-transform: capitalize
+				font-size: 18px
+.movie-container
+	.left
+	.right
+		alinear()
+	.left
+		position relative
+		.overlay
+			background-color: rgba(0, 0, 0, .75)
+			opacity: 0
+			transition all .5s ease
+			position absolute
+			left 0
+			top 0
+			right 0
+			bottom 0
+			line-height 12
+			text-align center
+			a
+				display block
+				height 100%
+				color white
+				text-decoration none
+				&:before
+					content "\f144"
+					font-family "fontawesome"
+					font-size 1.5rem
+					padding-right: .3rem
+			&:hover
+				&.overlay
+					opacity 1
+	.horarios
+		max-width 40%
+		.row
+			margin-bottom .5rem
+		.formato
+			span
+				font-family "DINREGULAR"
+				text-transform: uppercase
+				color white
+				font-size: 16px
+		.horarios
+			span
+				font-family "DINREGULAR"
+				background-color: #FFF
+				border-radius 5px
+				font-size 16px
+				padding .3rem
+				color black
+				margin-bottom .2rem
+				display inline-block
 // CARTELERA FIN
+
+// PREMIOS INICIO
+.principal
+	&.premios
+		background-image: url("../img/premios-bgnd.png")
+		.container
+			padding 16rem 0
+			.menu-premios
+				li
+					alinear()
+					vertical-align middle
+					&:first-child
+						margin-right 1rem
+		.modal
+			img
+				max-width 100%
+				height auto
+// PREMIOS FIN
 
 // Footer INICIO
 footer
@@ -235,6 +413,15 @@ footer
 	padding-bottom: 1.3rem
 	.container
 		position relative
+	.social
+		li
+			alinear()
+			margin-right 1rem
+			vertical-align: middle
+			&:first-child
+				color white
+			&:last-child
+				margin-right 0
 	.footer-menu
 		li
 			color white

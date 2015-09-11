@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head lang="Es">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bienvenidos a Cine Claro Honduras</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+</head>
+<body>
+  
+  
+  
+  <!-- Header Inicio -->
+  <div class=" borde-superior">
+    
+  </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <figure>
+            <a href="/">
+            <img src="img/cineclaro-logo.png" alt=""></figure>
+          </a>
+        </div>
+        
+        <div class="col-md-4 col-md-offset-1">
+          <div class="formulario">
+            <form action="">
+              <input type="text">
+              <button>Buscar</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-md-5">
+          <nav class="menu-principal">
+            <ul>
+              <li><a href="cartelera.html">Cartelera</a></li>
+              <li><a href="cines.html">Cines</a></li>
+              <li><a href="#">Proximos Estrenos</a></li>
+              <li><a href="#">Claro Video</a></li>
+              <li><a href="premios.html">Premios</a></li>
+              <li class="btn-movie"><a href="#"><img src="img/movie-button.png" alt=""></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header fin -->
+  
+  
+  <!-- Seccion Principal INICIO -->
+  <section class="principal premios">
+    <h1>premios</h1>
+    <div class="container">
+      <div class="row ">
+        
+        <div class="col-md-6 col-md-offset-6">
+          
+          <ul class="menu-premios">
+            <li><a href="#" id="tickts"><img src="/img/tickets1.png" alt=""></a></li>
+            <li><a href="#" id="otros"><img src="/img/otros.png" alt=""></a></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div id="ticketsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+              <img src="img/DBZ2.png" height="386" width="972" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div><!-- tickets FIN -->
+      <div id="otrosModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+              
+              <img src="img/DBZ.png" height="366" width="1146" alt="">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div><!-- otros FIN -->
+    </section>
+    <!-- Seccion Principal FIN -->
+    <!-- footer inicio -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-2 footer-menu">
+            <ul>
+              <li><a href="">Contacto</a></li>
+              <li><a href="">Ayuda</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-md-offset-6">
+            <ul class="social">
+              <li>Siguenos</li>
+              <li class="facebook"><a href="#">
+                <img src="img/fb.png" height="41" width="41" alt="">
+              </a></li>
+              <li class="twitter"><a href="#">
+                <img src="img/tw.png" height="41" width="41" alt="">
+              </a></li>
+              <li class="ytube"><a href="#">
+                <img src="img/yt.png" height="41" width="41" alt="">
+              </a></li>
+              <li class="gplus"><a href="#">
+                <img src="img/g+.png" height="41" width="41" alt="">
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      
+    </footer>
+    <!-- footer fin -->
+    
+    
+    <script type="text/javascript" src="js/minificado/all.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/equalize.js/1.0.2/equalize.min.js"></script>
+    
+    <script>
+    $('#tickts').click(function () {
+    
+    $('#ticketsModal').modal('show');
+    });
+    $('#otros').click(function () {
+    
+    $('#otrosModal').modal('show');
+    });
+    
+    </script>
+    
+    
+    
+  </body>
+</html>
