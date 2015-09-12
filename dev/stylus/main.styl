@@ -47,9 +47,10 @@ rem(pixel)
 	(pixel/16)rem
 html
 	font-size: 16px
-	height 100%
+	height 100vh
+	
 body
-	min-height 100%
+	height 100vh
 a
 	text-decoration none
 ul
@@ -68,6 +69,8 @@ h1
 	font-family "DINBOLD"
 	font-size: rem(40)
 	padding-top 2rem
+	padding-bottom 2rem
+	background-color rgba(0, 0, 0, .75)
 	margin-top 0
 	text-align center
 	color white
@@ -126,6 +129,19 @@ header
 	&.home
 		background-image: url('/img/bgnd.jpg')
 		background-size: cover
+.proximamente
+	padding-top 3rem
+	padding-bottom 3rem
+	text-align: center
+	h4
+		text-align: center
+		color white
+		display inline-block
+		padding .6rem 1.2rem
+		letter-spacing 2px
+		background-color rgba(255,45,0,.7)
+		border-radius 20px
+		font-size 26px
 .estrenos
 	background-color: rgba(255,45,0,.7)
 	position relative
@@ -142,10 +158,11 @@ header
 		width rem(300)
 .peliculas
 	background-color: rgba(0,0,0,.7)
-	padding-bottom: 1.5rem
-	padding-top: 1.5rem
+	padding-bottom: 3rem
+	padding-top: 3rem
+	position relative
 	.pelicula
-		margin-bottom 1rem
+		margin-bottom 4rem
 		.overlay
 			width 86.5%
 			height 100%
@@ -177,7 +194,7 @@ header
 				.overlay
 					opacity 1
 		h2
-			font-family "DINBOLD"
+			font-family "DINREGULAR"
 			font-size rem(21)
 			color amarillo
 			text-transform: uppercase
@@ -298,6 +315,12 @@ header
 	background-color: rgba(0, 0, 0, .75)
 	padding-top 5rem
 .menu-cines
+	position relative
+	bottom -2.25rem
+	background-image url("../img/reflejo.png")
+	background-repeat no-repeat
+	background-position left 9rem
+	padding-bottom 2rem
 	li
 		alinear()
 		margin-right 1rem
@@ -326,6 +349,9 @@ header
 	.dropdown
 		button
 			width 100%
+.starrr
+	font-size: 2rem
+	color amarillo
 .cartelera
 	margin-top 2rem
 	margin-bottom 2rem
