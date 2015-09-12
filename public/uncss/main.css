@@ -1,22 +1,31 @@
+/*####################################
+#
+#	Autor: Hector Sevilla
+#	Descripcion: Stylus para Aplicacion Cine Claro
+#	Fecha: 07/09/2015
+#	Hora: 20:00
+#
+#####################################*/
+
 @font-face {
   font-family: icomoon;
   font-weight: normal;
   src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoon") format('svg');
+  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'), url("../fonts/icomoon.woff") format('woff'), url("../fonts/icomoon.ttf") format('truetype'), url("../fonts/icomoon.svg#icomoon") format('svg');
 }
 
 @font-face {
   font-family: DINBOLD;
   font-weight: normal;
   src: url("../fonts/dinbold-webfont.eot");
-  src: url("../fonts/dinbold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/dinbold-webfont.woff") format('woff'),url("../fonts/dinbold-webfont.ttf") format('truetype'),url("../fonts/dinbold-webfont.svg#dinbold-webfont") format('svg');
+  src: url("../fonts/dinbold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/dinbold-webfont.woff") format('woff'), url("../fonts/dinbold-webfont.ttf") format('truetype'), url("../fonts/dinbold-webfont.svg#dinbold-webfont") format('svg');
 }
 
 @font-face {
   font-family: DINREGULAR;
   font-weight: normal;
   src: url("../fonts/pt_din_condensed_cyrillic-webfont.eot");
-  src: url("../fonts/pt_din_condensed_cyrillic-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/pt_din_condensed_cyrillic-webfont.woff") format('woff'),url("../fonts/pt_din_condensed_cyrillic-webfont.ttf") format('truetype'),url("../fonts/pt_din_condensed_cyrillic-webfont.svg#pt_din_condensed_cyrillic-webfont") format('svg');
+  src: url("../fonts/pt_din_condensed_cyrillic-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/pt_din_condensed_cyrillic-webfont.woff") format('woff'), url("../fonts/pt_din_condensed_cyrillic-webfont.ttf") format('truetype'), url("../fonts/pt_din_condensed_cyrillic-webfont.svg#pt_din_condensed_cyrillic-webfont") format('svg');
 }
 
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -47,6 +56,11 @@ a {
 a:active,
 a:hover {
   outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 img {
@@ -100,14 +114,14 @@ input {
   color: #fff;
   cursor: pointer;
   opacity: 1;
-  transition: all .6s;
+  transition: all 0.6s;
   background-image: url("../img/tickets.png");
 }
 
 #navs > li {
-  transition: all .6s;
-  -webkit-transition: all .6s;
-  -moz-transition: .6s;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: 0.6s;
   opacity: 0;
 }
 
@@ -119,7 +133,7 @@ input {
   -webkit-border-radius: 50%;
   text-decoration: none;
   color: #fff;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 #navs>li,
@@ -161,6 +175,11 @@ a {
 a:active,
 a:hover {
   outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 img {
@@ -232,6 +251,18 @@ h2 {
   text-transform: capitalize;
 }
 
+h1 {
+  font-family: "DINBOLD";
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgba(0,0,0,0.75);
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+
 .button-2 {
   background-color: #fff;
   border: solid 1px rgba(0,0,0,0.14);
@@ -241,7 +272,7 @@ h2 {
   box-shadow: inset 9px 7px 11px rgba(0,0,0,0.3);
   color: #000;
   height: 1.5625rem;
-  padding: .2rem .7rem;
+  padding: 0.2rem 0.7rem;
   text-transform: capitalize;
   width: 7.5625rem;
 }
@@ -279,20 +310,20 @@ header .formulario button {
 }
 
 header .menu-principal {
-  padding-top: .7rem;
+  padding-top: 0.7rem;
 }
 
 header .menu-principal li {
   display: inline-block;
   vertical-align: top;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 header .menu-principal li a {
   background-color: #464646;
   color: #fff;
   display: block;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 header .menu-principal li:last-child {
@@ -307,7 +338,7 @@ header .menu-principal li:last-child a {
 }
 
 .principal.home {
-  background-image: url("/img/bgnd.jpg");
+  background-image: url("../img/bgnd.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -323,7 +354,7 @@ header .menu-principal li:last-child a {
   text-align: center;
   color: #fff;
   display: inline-block;
-  padding: .6rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   letter-spacing: 2px;
   background-color: rgba(255,45,0,0.7);
   -webkit-border-radius: 20px;
@@ -395,7 +426,7 @@ header .menu-principal li:last-child a {
   content: "\f144";
   font-family: "fontawesome";
   font-size: 1.5rem;
-  padding-right: .3rem;
+  padding-right: 0.3rem;
 }
 
 .peliculas .pelicula figure {
@@ -439,11 +470,298 @@ header .menu-principal li:last-child a {
   border-bottom: 0;
 }
 
+.pelicula-left .pelicula {
+  background-color: rgba(0,0,0,0.7);
+  margin-top: 4rem;
+}
+
+.pelicula-left .pelicula .left,
+.pelicula-left .pelicula .right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pelicula-left .pelicula .left {
+  max-width: 12.5rem;
+}
+
+.pelicula-left .pelicula .right {
+  max-width: 60%;
+  margin-left: 1rem;
+}
+
+.pelicula-left .pelicula .right .content {
+  font-size: 1.125rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.pelicula-left .pelicula .right .calificar {
+  text-align: center;
+  color: #fff;
+}
+
+.pelicula-left .pelicula figure {
+  position: relative;
+}
+
+.pelicula-left .pelicula figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pelicula-left .trailer {
+  margin-bottom: 4rem;
+}
+
+.pelicula-right {
+  padding-top: 4rem;
+}
+
+.pelicula-right #cines {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+}
+
+.pelicula-right #cines ul {
+  background-color: transparent;
+  border: 0;
+  background-image: none;
+}
+
+.pelicula-right #cines ul li {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  max-width: 75px;
+  margin-right: 0;
+}
+
+.pelicula-right #cines ul li a {
+  padding: 0;
+}
+
+.pelicula-right #cines ul li a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pelicula-right #cines .accordion h3 {
+  font-family: "DINREGULAR";
+  font-size: 1.5rem;
+  background-image: none;
+  background: #eaeaea;
+  border: 0;
+  padding: 0.5rem;
+}
+
+.pelicula-right #cines .accordion h3 * {
+  vertical-align: middle;
+}
+
+.pelicula-right #cines .content-cine {
+  background-image: none;
+  background: #fff;
+  font-family: "DINREGULAR";
+  text-align: left;
+  border: 0;
+}
+
 .principal {
-  background-image: url("/img/cartelera-background.png");
+  background-image: url("../img/cartelera-background.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+
+.prefooter-cines {
+  background-color: rgba(0,0,0,0.75);
+  padding-top: 5rem;
+}
+
+.menu-cines {
+  position: relative;
+  bottom: -2.25rem;
+  background-image: url("../img/reflejo.png");
+  background-repeat: no-repeat;
+  background-position: left 9rem;
+  padding-bottom: 2rem;
+}
+
+.menu-cines li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1rem;
+}
+
+.menu-cines li:last-child {
+  margin-right: 0;
+}
+
+.menu-cines li a {
+  display: block;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.menu-cines li a:hover {
+  -webkit-box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px #fff;
+}
+
+.slider {
+  max-width: 90.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropup button,
+.dropup .dropdown-menu {
+  width: 100%;
+}
+
+.cartelera-page .principal {
+  background-image: url("../img/cartelera-background.png");
+}
+
+.seleccion-cartelera .dropdown button {
+  width: 100%;
+}
+
+.starrr {
+  font-size: 2rem;
+  color: #ffea00;
+}
+
+.cartelera {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cartelera > .row {
+  margin-bottom: 2rem;
+}
+
+.cartelera .info {
+  text-align: center;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.cartelera .info p {
+  color: #fff;
+}
+
+.cartelera .info p a {
+  color: #ffea00;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.movie-container .left,
+.movie-container .right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.movie-container .left {
+  position: relative;
+}
+
+.movie-container .left .overlay {
+  background-color: rgba(0,0,0,0.75);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 12;
+  text-align: center;
+}
+
+.movie-container .left .overlay a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.movie-container .left .overlay a:before {
+  content: "\f144";
+  font-family: "fontawesome";
+  font-size: 1.5rem;
+  padding-right: 0.3rem;
+}
+
+.movie-container .left .overlay:hover.overlay {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
+.movie-container .horarios {
+  max-width: 40%;
+}
+
+.movie-container .horarios .row {
+  margin-bottom: 0.5rem;
+}
+
+.movie-container .horarios .formato span {
+  font-family: "DINREGULAR";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+}
+
+.movie-container .horarios .horarios span {
+  font-family: "DINREGULAR";
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0.3rem;
+  color: #000;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+}
+
+.principal.premios {
+  background-image: url("../img/premios-bgnd.png");
+}
+
+.principal.premios .container {
+  padding: 16rem 0;
+}
+
+.principal.premios .container .menu-premios li {
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+}
+
+.principal.premios .container .menu-premios li:first-child {
+  margin-right: 1rem;
+}
+
+.principal.premios .modal img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-header .close {
+  font-family: "Arial";
 }
 
 footer {
@@ -482,7 +800,7 @@ footer .footer-menu li a {
 }
 
 footer .footer-menu li:last-child {
-  margin-left: .8rem;
+  margin-left: 0.8rem;
 }
 
 footer .tickets {

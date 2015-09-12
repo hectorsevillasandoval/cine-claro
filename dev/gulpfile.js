@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 gulp.task('stylus', function () {
     'use strict';
 gulp.src('stylus/main.styl')
-		.pipe(stylus({use: [nib()], compress:true}))
+		.pipe(stylus({use: [nib()], compress:false}))
 		.pipe(gulp.dest('../public/css'))
 		.pipe(connect.reload());
 	
@@ -39,7 +39,7 @@ gulp.task('imagemin', function() {
 
 gulp.task('minify', function() {
   gulp.src('*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    //.pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('../public/'))
     .pipe(connect.reload());
 });
@@ -63,7 +63,7 @@ gulp.task('watch', function() {
 gulp.task('uncss', function() {
     // content
     gulp.src('../public/css/main.css')
-        .pipe(uncss({html: ['index.html']}))
+        .pipe(uncss({html: ['index.html','cines.html','cartelera.html','premios.html','cartelera-detalle.html']}))
         /*.pipe(compressor())*/
         .pipe(gulp.dest('../public/uncss/'));
 });

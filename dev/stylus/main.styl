@@ -5,15 +5,6 @@
 #	Fecha: 07/09/2015
 #	Hora: 20:00
 #
-#	1- Cabecera
-#	2- Menu
-#	3- Slider
-#	4- Seccion Principal
-#	5- Reviews
-#	6- mapa
-#	7- Redes Sociales
-#	8- Footer
-#	9- Mediaquery
 #####################################*/
 
 @import 'fonts.styl'
@@ -127,7 +118,7 @@ header
 //Seccion Principal INICIO
 .principal
 	&.home
-		background-image: url('/img/bgnd.jpg')
+		background-image: url('../img/bgnd.jpg')
 		background-size: cover
 .proximamente
 	padding-top 3rem
@@ -278,7 +269,7 @@ header
 				background-image: none
 				border 0
 				max-width 75px
-				margin-right .4rem
+				margin-right 0
 				a
 					padding 0
 					img
@@ -309,7 +300,7 @@ header
 
 // CINES INICIO
 .principal
-	background-image: url("/img/cartelera-background.png")
+	background-image: url("../img/cartelera-background.png")
 	background-size: cover
 .prefooter-cines
 	background-color: rgba(0, 0, 0, .75)
@@ -344,7 +335,7 @@ header
 // CARTELERA INICIO
 .cartelera-page
 	.principal
-		background-image: url("/img/cartelera-background.png")
+		background-image: url("../img/cartelera-background.png")
 .seleccion-cartelera
 	.dropdown
 		button
@@ -437,6 +428,9 @@ header
 			img
 				max-width 100%
 				height auto
+.modal-header
+	.close
+		font-family: "Arial"
 // PREMIOS FIN
 
 // Footer INICIO
