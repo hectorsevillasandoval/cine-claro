@@ -43,12 +43,13 @@ figure
 ul
 	list-style none
 h2
-	font-family "DINBOLD"
+	font-family "Oswald"
 	font-size: rem(36)
 	color amarillo
 	text-transform: capitalize
+	font-weight: 700
 h1
-	font-family "DINBOLD"
+	font-family "Oswald"
 	font-size: rem(40)
 	padding-top 2rem
 	padding-bottom 2rem
@@ -57,6 +58,7 @@ h1
 	text-align center
 	color white
 	text-transform: capitalize
+	font-weight: 700
 .button-2
 	background-color: #FFF
 	border solid 1px rgba(0,0,0,.14)
@@ -68,7 +70,7 @@ h1
 	text-transform: capitalize
 	width rem(121)
 body
-	font-family "DINREGULAR"
+	font-family "Oswald"
 .borde-superior
 	background-color rojo
 	height rem(24)
@@ -176,12 +178,12 @@ header
 				.overlay
 					opacity 1
 		h2
-			font-family "DINREGULAR"
+			font-family "Oswald"
 			font-size rem(21)
 			color amarillo
 			text-transform: uppercase
 		.content
-			font-family "DINREGULAR"
+			font-family "Oswald"
 			font-size: rem(18)
 			margin-bottom 1rem
 			color white
@@ -268,7 +270,7 @@ header
 						height auto
 		.accordion
 			h3
-				font-family: "DINREGULAR"
+				font-family: "Oswald"
 				font-size: 1.5rem 
 				background-image: none
 				background #eaeaea
@@ -284,7 +286,7 @@ header
 		.content-cine
 			background-image none
 			background #fff
-			font-family: "DINREGULAR"
+			font-family: "Oswald"
 			text-align: left
 			border 0
 // DETALLE PELICULA FIN
@@ -387,13 +389,13 @@ header
 			margin-bottom .5rem
 		.formato
 			span
-				font-family "DINREGULAR"
+				font-family "Oswald"
 				text-transform: uppercase
 				color white
 				font-size: 16px
 		.horarios
 			span
-				font-family "DINREGULAR"
+				font-family "Oswald"
 				background-color: #FFF
 				border-radius 5px
 				font-size 16px
@@ -423,6 +425,30 @@ header
 	.close
 		font-family: "Arial"
 // PREMIOS FIN
+
+// PROXIMOS ESTRENOS INICIO
+.proximos-estrenos
+	.botones
+		max-width rem(207)
+		a
+			display inline-block
+			color black
+			background-color white
+			text-transform: uppercase
+			text-align: center
+			width 100%
+			padding-top .5rem
+			padding-bottom .5rem
+			font-size: 1.2rem
+	.pelicula-btn
+		alinear()
+		width 50%
+		&:last-child
+			margin-left -4px
+			a
+				background-color: #cbcbcb
+
+// PROXIMOS ESTRENOS FIN
 
 // Footer INICIO
 footer

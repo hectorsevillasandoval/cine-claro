@@ -236,14 +236,15 @@ ul {
 }
 
 h2 {
-  font-family: "DINBOLD";
+  font-family: "Oswald";
   font-size: 2.25rem;
   color: #ffea00;
   text-transform: capitalize;
+  font-weight: 700;
 }
 
 h1 {
-  font-family: "DINBOLD";
+  font-family: "Oswald";
   font-size: 2.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -252,6 +253,7 @@ h1 {
   text-align: center;
   color: #fff;
   text-transform: capitalize;
+  font-weight: 700;
 }
 
 .button-2 {
@@ -269,7 +271,7 @@ h1 {
 }
 
 body {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
 }
 
 .borde-superior {
@@ -436,14 +438,14 @@ header .menu-principal li:last-child a {
 }
 
 .peliculas .pelicula h2 {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   font-size: 1.3125rem;
   color: #ffea00;
   text-transform: uppercase;
 }
 
 .peliculas .pelicula .content {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   font-size: 1.125rem;
   margin-bottom: 1rem;
   color: #fff;
@@ -539,7 +541,7 @@ header .menu-principal li:last-child a {
 }
 
 .pelicula-right #cines .accordion h3 {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   font-size: 1.5rem;
   background-image: none;
   background: #eaeaea;
@@ -554,7 +556,7 @@ header .menu-principal li:last-child a {
 .pelicula-right #cines .content-cine {
   background-image: none;
   background: #fff;
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   text-align: left;
   border: 0;
 }
@@ -710,14 +712,14 @@ header .menu-principal li:last-child a {
 }
 
 .movie-container .horarios .formato span {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   text-transform: uppercase;
   color: #fff;
   font-size: 16px;
 }
 
 .movie-container .horarios .horarios span {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   background-color: #fff;
   -webkit-border-radius: 5px;
   border-radius: 5px;

@@ -453,13 +453,14 @@ ul {
   list-style: none;
 }
 h2 {
-  font-family: "DINBOLD";
+  font-family: "Oswald";
   font-size: 2.25rem;
   color: #ffea00;
   text-transform: capitalize;
+  font-weight: 700;
 }
 h1 {
-  font-family: "DINBOLD";
+  font-family: "Oswald";
   font-size: 2.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -468,6 +469,7 @@ h1 {
   text-align: center;
   color: #fff;
   text-transform: capitalize;
+  font-weight: 700;
 }
 .button-2 {
   background-color: #fff;
@@ -483,7 +485,7 @@ h1 {
   width: 7.5625rem;
 }
 body {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
 }
 .borde-superior {
   background-color: #f00;
@@ -627,13 +629,13 @@ header .menu-principal li:last-child a {
   filter: none;
 }
 .peliculas .pelicula h2 {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   font-size: 1.3125rem;
   color: #ffea00;
   text-transform: uppercase;
 }
 .peliculas .pelicula .content {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   font-size: 1.125rem;
   margin-bottom: 1rem;
   color: #fff;
@@ -745,7 +747,7 @@ header .menu-principal li:last-child a {
   height: auto;
 }
 .pelicula-right #cines .accordion h3 {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   font-size: 1.5rem;
   background-image: none;
   background: #eaeaea;
@@ -765,7 +767,7 @@ header .menu-principal li:last-child a {
 .pelicula-right #cines .content-cine {
   background-image: none;
   background: #fff;
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   text-align: left;
   border: 0;
 }
@@ -895,13 +897,13 @@ header .menu-principal li:last-child a {
   margin-bottom: 0.5rem;
 }
 .movie-container .horarios .formato span {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   text-transform: uppercase;
   color: #fff;
   font-size: 16px;
 }
 .movie-container .horarios .horarios span {
-  font-family: "DINREGULAR";
+  font-family: "Oswald";
   background-color: #fff;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -931,6 +933,31 @@ header .menu-principal li:last-child a {
 }
 .modal-header .close {
   font-family: "Arial";
+}
+.proximos-estrenos .botones {
+  max-width: 12.9375rem;
+}
+.proximos-estrenos .botones a {
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.proximos-estrenos .pelicula-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.proximos-estrenos .pelicula-btn:last-child {
+  margin-left: -4px;
+}
+.proximos-estrenos .pelicula-btn:last-child a {
+  background-color: #cbcbcb;
 }
 footer {
   background-color: #f00;
