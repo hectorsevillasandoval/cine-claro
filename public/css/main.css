@@ -222,8 +222,6 @@ th {
   opacity: 1;
 }
 #navs a {
-  width: 40px;
-  height: 40px;
   display: inline-block;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -240,6 +238,30 @@ th {
   height: 81px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
+}
+.prox-movies {
+  left: 4px;
+  bottom: 4px;
+  width: 278px;
+  height: 254px;
+  line-height: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.6s;
+}
+.prox-movies li {
+  position: relative;
+  z-index: 100;
+  transition: all 0.6s ease;
+  margin: 3rem;
+}
+.prox-movies li:hover {
+  z-index: 999;
 }
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
@@ -454,10 +476,9 @@ ul {
 }
 h2 {
   font-family: "Oswald";
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   color: #ffea00;
   text-transform: capitalize;
-  font-weight: 700;
 }
 h1 {
   font-family: "Oswald";
@@ -542,7 +563,7 @@ header .menu-principal li:last-child a {
 }
 .proximamente {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   text-align: center;
 }
 .proximamente h4 {
@@ -578,8 +599,8 @@ header .menu-principal li:last-child a {
 }
 .peliculas {
   background-color: rgba(0,0,0,0.7);
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
   position: relative;
 }
 .peliculas .pelicula {
@@ -638,6 +659,7 @@ header .menu-principal li:last-child a {
   font-family: "Oswald";
   font-size: 1.125rem;
   margin-bottom: 1rem;
+  font-weight: 300;
   color: #fff;
 }
 .peliculas .pelicula:last-child {
@@ -666,7 +688,7 @@ header .menu-principal li:last-child a {
   margin-left: 1rem;
 }
 .pelicula-left .pelicula .right .content {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -900,7 +922,7 @@ header .menu-principal li:last-child a {
   font-family: "Oswald";
   text-transform: uppercase;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 .movie-container .horarios .horarios span {
   font-family: "Oswald";
@@ -946,7 +968,7 @@ header .menu-principal li:last-child a {
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .proximos-estrenos .pelicula-btn {
   display: inline-block;
@@ -954,10 +976,20 @@ header .menu-principal li:last-child a {
   width: 50%;
 }
 .proximos-estrenos .pelicula-btn:last-child {
-  margin-left: -4px;
+  margin-left: -3px;
 }
 .proximos-estrenos .pelicula-btn:last-child a {
   background-color: #cbcbcb;
+}
+.principal.prox .container > .row {
+  margin-bottom: 2rem;
+}
+.modal-body h2 {
+  font-weight: 400;
+}
+.modal-body p {
+  color: #fff;
+  letter-spacing: 1px;
 }
 footer {
   background-color: #f00;

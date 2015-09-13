@@ -44,10 +44,9 @@ ul
 	list-style none
 h2
 	font-family "Oswald"
-	font-size: rem(36)
+	font-size: rem(28)
 	color amarillo
 	text-transform: capitalize
-	font-weight: 700
 h1
 	font-family "Oswald"
 	font-size: rem(40)
@@ -115,7 +114,7 @@ header
 		background-size: cover
 .proximamente
 	padding-top 3rem
-	padding-bottom 3rem
+	padding-bottom 6rem
 	text-align: center
 	h4
 		text-align: center
@@ -142,8 +141,8 @@ header
 		width rem(300)
 .peliculas
 	background-color: rgba(0,0,0,.7)
-	padding-bottom: 3rem
-	padding-top: 3rem
+	padding-bottom: 5rem
+	padding-top: 5rem
 	position relative
 	.pelicula
 		margin-bottom 4rem
@@ -186,6 +185,7 @@ header
 			font-family "Oswald"
 			font-size: rem(18)
 			margin-bottom 1rem
+			font-weight: 300
 			color white
 		&:last-child
 			margin-bottom 0
@@ -210,7 +210,7 @@ header
 			max-width 60%
 			margin-left 1rem
 			.content
-				font-size: rem(18)
+				font-size: rem(16)
 				color white
 				margin-bottom 1rem
 			.calificar
@@ -392,7 +392,7 @@ header
 				font-family "Oswald"
 				text-transform: uppercase
 				color white
-				font-size: 16px
+				font-size: 14px
 		.horarios
 			span
 				font-family "Oswald"
@@ -439,14 +439,25 @@ header
 			width 100%
 			padding-top .5rem
 			padding-bottom .5rem
-			font-size: 1.2rem
+			font-size: 1rem
 	.pelicula-btn
 		alinear()
 		width 50%
 		&:last-child
-			margin-left -4px
+			margin-left -3px
 			a
 				background-color: #cbcbcb
+.principal
+	&.prox
+		.container
+			> .row
+				margin-bottom: 2rem
+.modal-body
+	h2
+		font-weight: 400
+	p
+		color white
+		letter-spacing 1px
 
 // PROXIMOS ESTRENOS FIN
 
