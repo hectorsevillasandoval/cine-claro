@@ -837,6 +837,9 @@ header .menu-principal li:last-child a {
 .dropup .dropdown-menu {
   width: 100%;
 }
+.principal.en-cartelera .container > .row {
+  margin-bottom: 2rem;
+}
 .cartelera-page .principal {
   background-image: url("../img/cartelera-background.png");
 }
@@ -956,8 +959,37 @@ header .menu-principal li:last-child a {
 .modal-header .close {
   font-family: "Arial";
 }
+.prox .container {
+  position: relative;
+}
+.filtro {
+  position: absolute;
+  left: 0;
+  top: -5.7rem;
+}
+.filtro .dropdown .genero,
+.filtro .dropdown button {
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+}
+.filtro .dropdown .genero {
+  color: #fff;
+  margin-right: 0.5rem;
+}
 .proximos-estrenos .botones {
   max-width: 12.9375rem;
+}
+.proximos-estrenos .botones .wrapper {
+  zoom: 1;
+}
+.proximos-estrenos .botones .wrapper:before,
+.proximos-estrenos .botones .wrapper:after {
+  content: "";
+  display: table;
+}
+.proximos-estrenos .botones .wrapper:after {
+  clear: both;
 }
 .proximos-estrenos .botones a {
   display: inline-block;
@@ -973,10 +1005,8 @@ header .menu-principal li:last-child a {
 .proximos-estrenos .pelicula-btn {
   display: inline-block;
   vertical-align: top;
+  float: left;
   width: 50%;
-}
-.proximos-estrenos .pelicula-btn:last-child {
-  margin-left: -3px;
 }
 .proximos-estrenos .pelicula-btn:last-child a {
   background-color: #cbcbcb;

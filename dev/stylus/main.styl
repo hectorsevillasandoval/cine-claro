@@ -326,6 +326,11 @@ header
 // CINES FIN
 
 // CARTELERA INICIO
+.principal
+	&.en-cartelera
+		.container
+			> .row
+				margin-bottom 2rem
 .cartelera-page
 	.principal
 		background-image: url("../img/cartelera-background.png")
@@ -427,9 +432,26 @@ header
 // PREMIOS FIN
 
 // PROXIMOS ESTRENOS INICIO
+.prox
+	.container
+		position relative
+.filtro
+	position absolute
+	left 0
+	top -5.7rem
+	.dropdown
+		.genero
+		button
+			alinear()
+			vertical-align middle
+		.genero
+			color white
+			margin-right .5rem
 .proximos-estrenos
 	.botones
 		max-width rem(207)
+		.wrapper
+			clearfix()
 		a
 			display inline-block
 			color black
@@ -442,9 +464,9 @@ header
 			font-size: 1rem
 	.pelicula-btn
 		alinear()
+		float left
 		width 50%
 		&:last-child
-			margin-left -3px
 			a
 				background-color: #cbcbcb
 .principal
