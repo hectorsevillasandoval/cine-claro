@@ -1,8 +1,8 @@
 #navs
     left 4px
     bottom 4px
-    width 278px
-    height 254px
+    width 200px
+    height 200px
     line-height 40px
     list-style-type none
     margin 0
@@ -13,6 +13,8 @@
     opacity 1
     transition all .6s
     background-image url("../img/tickets.png")
+    background-size contain
+    background-repeat no-repeat
     & > li
         transition all .6s
         -webkit-transition all .6s
@@ -55,10 +57,19 @@
     cursor pointer
     opacity 1
     transition all .6s
+    position relative
     li
-        position relative
+        position absolute
         z-index 100
         transition all .6s ease
-        margin 3rem
+        width 120px
+        img
+            width 100%
         &:hover
             z-index 999
+        &:nth-of-type(2)
+            left 34%
+            top 10%
+        &:last-of-type
+            left 65%
+            top 29%

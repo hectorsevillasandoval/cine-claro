@@ -84,7 +84,7 @@
               <div class="calificar">
                 Califica esta pelicula
                 <div id="stars-existing" class="starrr" data-rating='4'></div>
-        You gave a rating of <span id="count-existing">4</span> star(s)
+        
               </div>
             </div>
           </article>
@@ -258,7 +258,10 @@
                             $( "#cines" ).tabs({
                             collapsible: true
                             });
-                            $( ".accordion" ).accordion();
+                            $( ".accordion" ).accordion({
+                              active: false,
+                              collapsible: true
+                            });
                             });
                             </script>
                             

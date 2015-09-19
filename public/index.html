@@ -126,25 +126,6 @@
 
 
 
-          <!--  PELICULA 3 INICIO -->
-          <article class="pelicula row">
-            <figure class="left col-md-4">
-              
-              <img src="img/movie-poster-3.png" height="310" width="207" alt="">
-              
-              <div class="overlay"><a href="#" class="trailer">
-                Ver Trailer
-              </a></div>
-            </figure>
-            <div class="right col-md-8">
-              <h2>Sinopsis</h2>
-              <p class="content">
-                La falla de San Andrés termina por ceder ante las temibles fuerzas telúricas y acaba desencadenando un terremoto de magnitud 9 en California. El piloto de un helicóptero de búsqueda y rescate y su ex mujer viajan juntos desde la ciudad de Los Ángeles hasta ...
-              </p>
-              <a href="#" class="button-2 trailer">ver trailer</a>
-            </div>
-          </article>
-          <!--  PELICULA 3 FIN -->
         </div>
         <div class="proximamente col-md-5">
           
@@ -242,7 +223,7 @@
   
   
   (function(){
-  var ul=$("#navs"),li=$("#navs li"),i=li.length,n=i-1,r=200;
+  var ul=$("#navs"),li=$("#navs li"),i=li.length,n=i-1,r=180;
   ul.click(function(){
   $(this).toggleClass('active');
   if($(this).hasClass('active')){
@@ -251,8 +232,8 @@
   li.eq(a).css({
   'transition-delay':""+(50*a)+"ms",
   '-webkit-transition-delay':""+(50*a)+"ms",
-  'left':(r*Math.cos(140/n*a*(Math.PI/360))),
-  'top':(-r*Math.sin(140/n*a*(Math.PI/360))),
+  'left':(r*Math.cos(110/n*a*(Math.PI/260))),
+  'top':(-r*Math.sin(110/n*a*(Math.PI/260))),
   'opacity':1
   });
   }
@@ -263,7 +244,7 @@
 
   
 
-  var li2 = $(".prox-movies li"), i2 = li2.length;
+  /*var li2 = $(".prox-movies li"), i2 = li2.length;
   for(var a=0;a<i2;a++){
   $(".prox-movies li").eq(a).css({
   'transition-delay':""+(50*a)+"ms",
@@ -272,7 +253,7 @@
   'top':(-180*Math.sin(160/n*a*(Math.PI/360))),
   'opacity':1
   });
-  }
+  }*/
 
 
   $('.principal > div > .row').equalize('outerHeight');

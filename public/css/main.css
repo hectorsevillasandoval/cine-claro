@@ -199,8 +199,8 @@ th {
 #navs {
   left: 4px;
   bottom: 4px;
-  width: 278px;
-  height: 254px;
+  width: 200px;
+  height: 200px;
   line-height: 40px;
   list-style-type: none;
   margin: 0;
@@ -211,6 +211,8 @@ th {
   opacity: 1;
   transition: all 0.6s;
   background-image: url("../img/tickets.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #navs > li {
   transition: all 0.6s;
@@ -253,15 +255,27 @@ th {
   cursor: pointer;
   opacity: 1;
   transition: all 0.6s;
+  position: relative;
 }
 .prox-movies li {
-  position: relative;
+  position: absolute;
   z-index: 100;
   transition: all 0.6s ease;
-  margin: 3rem;
+  width: 120px;
+}
+.prox-movies li img {
+  width: 100%;
 }
 .prox-movies li:hover {
   z-index: 999;
+}
+.prox-movies li:nth-of-type(2) {
+  left: 34%;
+  top: 10%;
+}
+.prox-movies li:last-of-type {
+  left: 65%;
+  top: 29%;
 }
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
@@ -599,12 +613,12 @@ header .menu-principal li:last-child a {
 }
 .peliculas {
   background-color: rgba(0,0,0,0.7);
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   position: relative;
 }
 .peliculas .pelicula {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .peliculas .pelicula .overlay {
   width: 86.5%;
@@ -1023,8 +1037,12 @@ header .menu-principal li:last-child a {
 }
 footer {
   background-color: #f00;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 footer .container {
   position: relative;
@@ -1055,5 +1073,6 @@ footer .footer-menu li:last-child {
 footer .tickets {
   position: absolute;
   right: 0;
-  top: -269px;
+  top: -193px;
+  max-width: 200px;
 }
